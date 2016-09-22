@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Bundles/Bundles.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HotFrameworkTest/HotFrameworkTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BeatUI/BeatUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cartfile">
+   </FileRef>
+</Workspace>

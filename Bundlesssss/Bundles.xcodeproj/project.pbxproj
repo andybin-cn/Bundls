@@ -33,6 +33,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B31970A91D927E0B007370B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B31970591D927DB5007370B5 /* bundles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bundles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B319705C1D927DB5007370B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +90,8 @@
 		B31970501D927DB5007370B5 = {
 			isa = PBXGroup;
 			children = (
-				B319705B1D927DB5007370B5 /* bundles */,
-				B31970701D927DB5007370B5 /* bundlesTests */,
+				B319705B1D927DB5007370B5 /* Bundles */,
+				B31970701D927DB5007370B5 /* BundlesTests */,
 				B319707B1D927DB5007370B5 /* bundlesUITests */,
 				B319705A1D927DB5007370B5 /* Products */,
 			);
@@ -94,7 +107,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B319705B1D927DB5007370B5 /* bundles */ = {
+		B319705B1D927DB5007370B5 /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
 				B319705C1D927DB5007370B5 /* AppDelegate.swift */,
@@ -104,15 +117,17 @@
 				B31970651D927DB5007370B5 /* LaunchScreen.storyboard */,
 				B31970681D927DB5007370B5 /* Info.plist */,
 			);
+			name = Bundles;
 			path = bundles;
 			sourceTree = "<group>";
 		};
-		B31970701D927DB5007370B5 /* bundlesTests */ = {
+		B31970701D927DB5007370B5 /* BundlesTests */ = {
 			isa = PBXGroup;
 			children = (
 				B31970711D927DB5007370B5 /* bundlesTests.swift */,
 				B31970731D927DB5007370B5 /* Info.plist */,
 			);
+			name = BundlesTests;
 			path = bundlesTests;
 			sourceTree = "<group>";
 		};
@@ -135,6 +150,7 @@
 				B31970551D927DB5007370B5 /* Sources */,
 				B31970561D927DB5007370B5 /* Frameworks */,
 				B31970571D927DB5007370B5 /* Resources */,
+				B31970A91D927E0B007370B5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +209,7 @@
 				TargetAttributes = {
 					B31970581D927DB5007370B5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = EG49RAY3R6;
 					};
 					B319706C1D927DB5007370B5 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -204,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B31970541D927DB5007370B5 /* Build configuration list for PBXProject "bundles" */;
+			buildConfigurationList = B31970541D927DB5007370B5 /* Build configuration list for PBXProject "Bundles" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -335,6 +352,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -381,6 +399,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -401,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bundles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Binea.bundles;
@@ -412,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = bundles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Binea.bundles;
@@ -468,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B31970541D927DB5007370B5 /* Build configuration list for PBXProject "bundles" */ = {
+		B31970541D927DB5007370B5 /* Build configuration list for PBXProject "Bundles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B319707F1D927DB5007370B5 /* Debug */,
@@ -484,6 +505,7 @@
 				B31970831D927DB5007370B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B31970841D927DB5007370B5 /* Build configuration list for PBXNativeTarget "bundlesTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +514,7 @@
 				B31970861D927DB5007370B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B31970871D927DB5007370B5 /* Build configuration list for PBXNativeTarget "bundlesUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +523,7 @@
 				B31970891D927DB5007370B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

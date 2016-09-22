@@ -1,18 +1,19 @@
 //
-//  ViewController.swift
-//  bundles
+//  HotLoadViewController.swift
+//  HotFrameworkTest
 //
-//  Created by Leo on 16/9/21.
+//  Created by Leo on 2016/9/22.
 //  Copyright © 2016年 Binea. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HotLoadViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
